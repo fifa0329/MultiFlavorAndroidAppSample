@@ -2,15 +2,17 @@
 
 buildscript {
     repositories {
-        mavenCentral()
+        maven(){
+            url 'http://maven.oschina.net/content/groups/public/'
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.9.+'
+        classpath 'com.android.tools.build:gradle:1.2.3'
     }
 }
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
-}
+//allprojects {
+//    repositories {
+//        mavenCentral()
+//    }
+//}
